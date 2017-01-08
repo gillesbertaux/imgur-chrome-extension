@@ -1,4 +1,4 @@
-# imgur-chrome-extension
+# Imgur Chrome Extension (⚠️ not official)
 
 **What it does**: It fetches Imgur posts (front page or usersub) when you open a new tab.
 
