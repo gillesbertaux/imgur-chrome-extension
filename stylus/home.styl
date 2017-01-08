@@ -69,10 +69,16 @@ body
 
 .oc-list
   column-count 2
+  @media screen and (max-width: 930px)
+    column-count 1
+    text-align center
+    padding 20px
   a
     text-decoration none
   li
     width 450px
+    @media screen and (max-width: 930px)
+      width 100%
     list-style none
     margin 0 auto 20px auto
     background #2C2F34
