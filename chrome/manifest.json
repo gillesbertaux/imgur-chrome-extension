@@ -1,0 +1,29 @@
+{
+  "manifest_version": 2,
+
+  "name": "Imgur Chrome Extension",
+  "description": "This extension shows trending posts on Imgur",
+  "version": "1.0",
+
+  "browser_action": {
+    "default_icon": "icon.png"
+  },
+
+  "chrome_url_overrides" : {
+    "newtab": "imgur.html"
+  },
+
+  "content_security_policy": "script-src 'self' https://ajax.googleapis.com; object-src 'self'",
+
+  "content_scripts": [
+    {
+      "matches": ["http://www.google.com/*"],
+      "css": ["main.css"],
+      "js": ["main.js"]
+    }
+  ],
+
+  "permissions": [
+    "storage"
+  ]
+}

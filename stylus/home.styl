@@ -1,0 +1,99 @@
+/*
+* HOME STYLE
+*/
+
+body
+  background #141518
+
+.button
+  font-weight 500
+  color #f2f2f2
+  border-radius .25rem
+
+  &.big
+    padding 10px 24px
+    font-size 15px
+    width auto
+    text-decoration none
+
+  &.green
+    background-color #1bb76e
+    border 1px solid #1bb76e
+    transition all .2s ease-in-out
+    &:hover
+      background-color darken(#1bb76e, 10%)
+      transition all .2s ease-in-out
+    &.active
+      background-color darken(#1bb76e, 20%)
+
+.oc-header
+  padding 10px
+  background-color #34373c
+  box-shadow 0 0 11px 1px #111
+  margin-bottom 20px
+
+  .oc-header-ctn
+    display flex
+    justify-content space-between
+    align-items center
+    max-width 930px
+    margin 0 auto
+    text-align center
+
+  .oc-header-ctn-logo
+    display inline-block
+    vertical-align middle
+
+  .oc-header-ctn-title
+    display inline-block
+    vertical-align middle
+    color #fff
+    margin 0 0 0 10px
+
+  .oc-header-ctn-link
+    color #fff
+    text-decoration none
+    margin-right 10px
+
+.oc-nav
+  text-align center
+  padding 10px
+  margin-bottom 20px
+
+  .button
+    margin 20px 10px 0 10px
+
+.oc
+  max-width 930px
+  margin 0 auto
+
+.oc-list
+  column-count 2
+  a
+    text-decoration none
+  li
+    width 450px
+    list-style none
+    margin 0 auto 20px auto
+    background #2C2F34
+    padding 20px
+    border-radius .25rem
+    display inline-block
+    -webkit-column-break-inside avoid
+    page-break-inside avoid
+    break-inside avoid
+    &:hover
+      background lighten(#2C2F34, 5%)
+  img
+    width 100%
+    display block
+    margin-bottom 10px
+  h2
+    color #fff
+    text-decoration none
+    font-size 18px
+    font-weight 500
+    margin-bottom 10px
+  p
+    color #999
+    font-size 13px
