@@ -2,11 +2,20 @@
   "manifest_version": 2,
 
   "name": "Imgur Chrome Extension",
-  "description": "This extension shows trending posts on Imgur",
+  "description": "This extension shows trending posts on Imgur when a new tab is open",
   "version": "1.0",
+  "author": "TheMappleKindYeah",
+  "homepage_url": "https://github.com/gillesbertaux/imgur-chrome-extension",
+  "short_name": "Imgur App",
 
   "browser_action": {
     "default_icon": "icon.png"
+  },
+
+  "icons": {
+    "128": "icon_128.png",
+    "48": "icon_48.png",
+    "16": "icon_16.png"
   },
 
   "chrome_url_overrides" : {
