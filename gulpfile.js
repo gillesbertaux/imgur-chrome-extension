@@ -11,7 +11,12 @@ var autoprefixer = require('autoprefixer');
 
 // Concatenate & Minify JS
 gulp.task('scripts', function() {
-  return gulp.src('javascript/*.js')
+  return gulp.src([
+    'javascript/loop.js',
+    'javascript/storage.js',
+    'javascript/main.js'
+    ])
+    .pipe(concat('main.js'))
     .pipe(rename('main.js'))
     .pipe(uglify())
     .pipe(gulp.dest('chrome'));
